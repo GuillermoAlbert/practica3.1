@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Depuración_GAG_22_23
 {
@@ -26,9 +27,9 @@ namespace Depuración_GAG_22_23
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (radioButtonUrgente.Checked)
                 tipoTelegrama = 'u';
-            else
+            if (radioButtonOrdinario.Checked)
                 tipoTelegrama = 'o';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Split(' ').Length;
