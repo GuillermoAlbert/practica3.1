@@ -34,9 +34,10 @@ namespace Depuración_GAG_22_23
             this.lResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtTelegrama = new System.Windows.Forms.RichTextBox();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.radioButtonOrdinario = new System.Windows.Forms.RadioButton();
+            this.radioButtonUrgente = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +46,7 @@ namespace Depuración_GAG_22_23
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.Location = new System.Drawing.Point(85, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Texto";
             // 
@@ -76,22 +77,12 @@ namespace Depuración_GAG_22_23
             this.txtTelegrama.TabIndex = 5;
             this.txtTelegrama.Text = "";
             // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(88, 256);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(84, 20);
-            this.cbUrgente.TabIndex = 6;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(85, 294);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Coste: ";
             // 
@@ -99,17 +90,40 @@ namespace Depuración_GAG_22_23
             // 
             this.txtPrecio.Location = new System.Drawing.Point(136, 288);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(132, 22);
             this.txtPrecio.TabIndex = 8;
+            // 
+            // radioButtonOrdinario
+            // 
+            this.radioButtonOrdinario.AutoSize = true;
+            this.radioButtonOrdinario.Location = new System.Drawing.Point(88, 256);
+            this.radioButtonOrdinario.Name = "radioButtonOrdinario";
+            this.radioButtonOrdinario.Size = new System.Drawing.Size(83, 20);
+            this.radioButtonOrdinario.TabIndex = 9;
+            this.radioButtonOrdinario.TabStop = true;
+            this.radioButtonOrdinario.Text = "Ordinario";
+            this.radioButtonOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonUrgente
+            // 
+            this.radioButtonUrgente.AutoSize = true;
+            this.radioButtonUrgente.Location = new System.Drawing.Point(188, 256);
+            this.radioButtonUrgente.Name = "radioButtonUrgente";
+            this.radioButtonUrgente.Size = new System.Drawing.Size(76, 20);
+            this.radioButtonUrgente.TabIndex = 10;
+            this.radioButtonUrgente.TabStop = true;
+            this.radioButtonUrgente.Text = "Urgente";
+            this.radioButtonUrgente.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 444);
+            this.Controls.Add(this.radioButtonUrgente);
+            this.Controls.Add(this.radioButtonOrdinario);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lResultado);
@@ -137,9 +151,10 @@ namespace Depuración_GAG_22_23
         private System.Windows.Forms.Label lResultado;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox txtTelegrama;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.RadioButton radioButtonOrdinario;
+        private System.Windows.Forms.RadioButton radioButtonUrgente;
     }
 }
 
