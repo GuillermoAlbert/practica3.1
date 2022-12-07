@@ -17,8 +17,9 @@ namespace Depuración_GAG_22_23
         {
             InitializeComponent();
         }
+
         //? Guillermo Albert 22-23
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCoste_Click(object sender, EventArgs e)
         {
             string textoTelegrama;
             char tipoTelegrama = ' ';

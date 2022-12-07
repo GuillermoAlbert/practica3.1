@@ -32,12 +32,12 @@ namespace Depuración_GAG_22_23
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lResultado = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtTelegrama = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.radioButtonOrdinario = new System.Windows.Forms.RadioButton();
             this.radioButtonUrgente = new System.Windows.Forms.RadioButton();
+            this.buttonCoste = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,17 +57,6 @@ namespace Depuración_GAG_22_23
             this.lResultado.Name = "lResultado";
             this.lResultado.Size = new System.Drawing.Size(0, 16);
             this.lResultado.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(379, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtTelegrama
             // 
@@ -115,17 +104,28 @@ namespace Depuración_GAG_22_23
             this.radioButtonUrgente.Text = "Urgente";
             this.radioButtonUrgente.UseVisualStyleBackColor = true;
             // 
+            // buttonCoste
+            // 
+            this.buttonCoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.buttonCoste.Location = new System.Drawing.Point(383, 256);
+            this.buttonCoste.Name = "buttonCoste";
+            this.buttonCoste.Size = new System.Drawing.Size(109, 54);
+            this.buttonCoste.TabIndex = 11;
+            this.buttonCoste.Text = "Calcular";
+            this.buttonCoste.UseVisualStyleBackColor = true;
+            this.buttonCoste.Click += new System.EventHandler(this.buttonCoste_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 444);
+            this.Controls.Add(this.buttonCoste);
             this.Controls.Add(this.radioButtonUrgente);
             this.Controls.Add(this.radioButtonOrdinario);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTelegrama);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lResultado);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -135,26 +135,17 @@ namespace Depuración_GAG_22_23
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void bCalcular_Click_1(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lResultado;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox txtTelegrama;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.RadioButton radioButtonOrdinario;
         private System.Windows.Forms.RadioButton radioButtonUrgente;
+        private System.Windows.Forms.Button buttonCoste;
     }
 }
 
