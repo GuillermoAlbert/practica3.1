@@ -26,18 +26,18 @@ namespace Depuración_GAG_22_23
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (radioButtonUrgente.Checked)
+            if (cbUrgente.Checked)
                 tipoTelegrama = 'u';
-            if (radioButtonOrdinario.Checked)
+            else
                 tipoTelegrama = 'o';
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            numPalabras = textoTelegrama.Split(' ').Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 25;
+                    coste = 2.5;
                 else
-                    coste = 0.5 * numPalabras;
+                    coste = 2.5 + 0.5 * (numPalabras - 10);
             else
             //Si el telegrama es urgente
             if (tipoTelegrama == 'u')
